@@ -22,3 +22,4 @@ use App\Http\Controllers\Api\Auth;
 
 Route::post('/auth-api-user', [Auth\AuthController::class, 'auth_api_user']);
 Route::post('/auth-api-refresh-token', [Auth\AuthController::class, 'refresh_token']);
+Route::get('/getMedia','Api\UploadController@index');

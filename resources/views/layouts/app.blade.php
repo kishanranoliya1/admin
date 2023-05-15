@@ -21,9 +21,9 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
 	
 	<!-- aiz core css -->
-	<link rel="stylesheet" href="http://localhost/admin2/public/assets/css/vendors.css">
+	<link rel="stylesheet" href="{{ asset('assets/css/vendors.css') }}">
 
-	<link rel="stylesheet" href="http://localhost/admin2/public/assets/css/aiz-core.css">
+	<link rel="stylesheet" href="{{ asset('assets/css/aiz-core.css') }}">
 
     <style>
         body {
@@ -75,10 +75,10 @@
     @yield('modal')
 
 
-	<script src="http://localhost/admin2/public/assets/js/vendors.js" ></script>
-	<script src="http://localhost/admin2/public/assets/js/aiz-core.js" ></script>
+	<script src="{{ asset('assets/js/vendors.js') }}" ></script>
+	<script src="{{ asset('assets/js/aiz-core.js') }}" ></script>
 
-    @yield('script')
+    {{-- @yield('script') --}}
 
     <script type="text/javascript">
 	    @foreach (session('flash_notification', collect())->toArray() as $message)

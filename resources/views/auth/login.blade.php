@@ -5,7 +5,7 @@
     <input type="submit" value="Log In" />   
 {{Form::close()}}
 
-<style>
+<style> 
 /* @import url('https://fonts.googleapis.com/css?family=Raleway:400,700'); */
 
 body {

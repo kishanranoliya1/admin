@@ -16,8 +16,7 @@ class UploadController extends Controller
 {
     public function index(Request $request){
         $baseurl = url('/') . '/';
-        $all_uploads =  Upload::select('*', DB::raw("CONCAT('$baseurl', file_name) AS file_name"))->orderBy('id', 'DESC')->get(); 
-        
+        $all_uploads =  Upload::select('*', DB::raw("CONCAT('$baseurl', file_name) AS file_name"))->pluck('file_name')->toArray();        
         if (count($all_uploads) > 0) {
             return response()->json(
                 [

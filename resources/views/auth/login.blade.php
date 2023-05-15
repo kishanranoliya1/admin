@@ -1,5 +1,5 @@
 {{ Form::open(['url'=>'login' , 'method'=>'post','class'=>"login"]) }}
-    <h2>Welcome, Divine app!</h2>
+    <h2>Welcome, Divine app! </h2>
     <input type="text" name="email" placeholder="Email" />
     <input type="password" name="password" placeholder="Password" />
     <input type="submit" value="Log In" />   
